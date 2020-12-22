@@ -1,0 +1,12 @@
+# building the library
+add_library(ipb_arithmetic subtract.cpp sum.cpp)
+# building the app
+add_executable(test_ipb_arithmetic main.cpp)
+# linking the library and the app
+target_link_libraries(test_ipb_arithmetic ipb_arithmetic)
+# installing the app
+install(TARGETS test_ipb_arithmetic 
+        DESTINATION ${PROJECT_SOURCE_DIR}/results/bin)
+# installing the library
+install(TARGETS ipb_arithmetic 
+        DESTINATION ${PROJECT_SOURCE_DIR}/results/lib)
