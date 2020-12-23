@@ -1,7 +1,0 @@
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/install/local.dir
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/install/strip.dir
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/install.dir
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/list_install_components.dir
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/rebuild_cache.dir
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/edit_cache.dir
-/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/build/CMakeFiles/task_1.dir
