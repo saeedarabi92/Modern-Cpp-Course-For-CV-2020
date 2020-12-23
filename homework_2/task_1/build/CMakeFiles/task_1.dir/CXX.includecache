@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/saeedarabi/Desktop/experiment/github/Modern-Cpp-Course-For-CV-2020/homework_2/task_1/task_1.cpp
+cstdlib
+-
+iostream
+-
+random
+-
+
