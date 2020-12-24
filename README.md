@@ -1,4 +1,4 @@
-### My solutions for homeworks of Modern Cpp Course For CV 2020 held at Bonn university.
+### My solutions for homeworks of _Modern Cpp For CV 2020_ course held at Bonn university.
 ------
 * [Course website](https://www.ipb.uni-bonn.de/teaching/cpp-2020/tutorials/)
 
