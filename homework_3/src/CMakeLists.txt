@@ -4,8 +4,8 @@ add_executable(main main.cpp)
 target_link_libraries(main html_writer)
 # target_link_libraries(main image_browser)
 install(TARGETS main
-        DESTINATION ${PROJECT_SOURCE_DIR}/results/bin)
+        DESTINATION ${CMAKE_SOURCE_DIR}/bin)
 install(TARGETS html_writer
-        DESTINATION ${PROJECT_SOURCE_DIR}/results/lib)
+        DESTINATION ${CMAKE_SOURCE_DIR}/lib)
 # install(TARGETS image_browser
-        # DESTINATION ${PROJECT_SOURCE_DIR}/results/lib)
+        # DESTINATION ${PROJECT_SOURCE_DIR}/lib)
