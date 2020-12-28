@@ -5,13 +5,15 @@ ___
 ![](files/0002.jpg)
 ___
 ### Solutions
-<!-- Task_1: 
+html library writer: 
 1. Clone the repo
-2. `cd` to `homework_2/task_1`
-3. Run `./install.sh`
+2. `cd` to `homework_3`
+3. Run `./install.sh` 
+4. Run `./bin/main`
+    * This will creat the `app.html` which can be opened properly after moving it to `web_app` folder.
 
 
-Task_2: 
+<!-- Task_2: 
 1. Clone the repo
 2. `cd` to `homework_2/task_2`
-3. Run `./install.sh` -->
+3. Run `./install.sh`  -->
