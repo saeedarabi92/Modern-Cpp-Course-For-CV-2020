@@ -50,7 +50,7 @@ void AddRow(std::fstream& file);
 // Close the row
 void CloseRow(std::fstream& file);
 
-// Close the row
+// Add the column
 void AddColumn(std::fstream& file, const std::string& imagename,
                const std::string& imagesrc, const float& imagescore,
                const bool& style);
