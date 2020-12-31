@@ -15,12 +15,12 @@ namespace html_writer {
  * HTML5 file. This function should be called only once at the begining of your
  * test program.
  */
-void OpenDocument(std::fstream& filename);
+void OpenDocument();
 /**
  * @brief CloseDocument() will close the HTML5 file, this function should be
  * called only once at the end of your test program.
  */
-void CloseDocument(std::fstream& filename);
+void CloseDocument();
 
 /**
  * @brief To make your application look nicer, you could opt for providing a
@@ -29,31 +29,30 @@ void CloseDocument(std::fstream& filename);
  * @param stylesheet The path where the CSS file is located, typically
  * "<path>/style.css"
  */
-void AddCSSStyle(const std::string& stylesheet, std::fstream& file);
+void AddCSSStyle(const std::string& stylesheet);
 
 /**
  * @brief This function adds a Title to your web application
  *
  * @param title The string containing the title, could be as long as you wish.
  */
-void AddTitle(const std::string& title, std::fstream& file);
+void AddTitle(const std::string& title);
 
 // Initiate the body
-void AddBody(std::fstream& file);
+void AddBody();
 
 // Close the body
-void CloseBody(std::fstream& file);
+void CloseBody();
 
 // Initiate the row
-void AddRow(std::fstream& file);
+void AddRow();
 
 // Close the row
-void CloseRow(std::fstream& file);
+void CloseRow();
 
 // Add the column
-void AddColumn(std::fstream& file, const std::string& imagename,
-               const std::string& imagesrc, const float& imagescore,
-               const bool& style);
+void AddColumn(const std::string& imagename, const std::string& imagesrc,
+               const float& imagescore, const bool& style);
 
 }  // namespace html_writer
 
