@@ -51,6 +51,7 @@ void AddRow(std::fstream& file);
 void CloseRow(std::fstream& file);
 
 // Add the column
+// Push test
 void AddColumn(std::fstream& file, const std::string& imagename,
                const std::string& imagesrc, const float& imagescore,
                const bool& style);
