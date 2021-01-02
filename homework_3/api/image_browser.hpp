@@ -4,18 +4,15 @@
 // Copyright (c) 2020 Ignacio Vizzo, all rights reserved
 #ifndef IMAGE_BROWSER_HPP_
 #define IMAGE_BROWSER_HPP_
-
 #include <array>
 #include <string>
 #include <tuple>
 #include <vector>
 
 namespace image_browser {
-
 /// Some Utility Name Types that will make the code more readable
 using ScoredImage = std::tuple<std::string, float>;
-using ImageRow = std::array<ScoredImage, 3>;
-
+using ImageRow = std::vector<ScoredImage>;
 /**
  * @brief This function is in charge to add a full row in the web application, A
  * row consists always of 3 columns, each one contains one image with a given
@@ -26,7 +23,6 @@ using ImageRow = std::array<ScoredImage, 3>;
  * highlighted.
  */
 void AddFullRow(const ImageRow& row, bool first_row = false);
-
 /**
  * @brief Create a Image Browser application, This function should be completely
  * self containded and should take all the necessary actions to create an image
@@ -38,7 +34,6 @@ void AddFullRow(const ImageRow& row, bool first_row = false);
  */
 void CreateImageBrowser(const std::string& title, const std::string& stylesheet,
                         const std::vector<ImageRow>& rows);
-
 }  // namespace image_browser
 
 #endif  // IMAGE_BROWSER_HPP_

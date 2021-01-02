@@ -52,7 +52,7 @@ void CloseRow();
 
 // Add the column
 void AddColumn(const std::string& imagename, const std::string& imagesrc,
-               const float& imagescore, const bool& style);
+               const float& imagescore, bool& style);
 
 }  // namespace html_writer
 
