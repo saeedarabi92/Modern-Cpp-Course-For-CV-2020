@@ -53,6 +53,8 @@ void html_writer::AddColumn(const std::string& imagename,
   std::cout << "<img src ="
             << "\"" << imagesrc << "\""
             << " />" << std::endl;
-  std::cout << "<p>score = " << imagescore << "</p>" << std::endl;
+  float non_const_imagescore = imagescore;
+  std::cout << "<p>score = " << std::setprecision(2) << std::fixed
+            << non_const_imagescore << "</p>" << std::endl;
   std::cout << "</div>" << std::endl;
 }
