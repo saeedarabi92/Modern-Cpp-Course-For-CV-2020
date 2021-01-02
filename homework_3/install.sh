@@ -9,4 +9,4 @@ cd ../bin/
 rm ../web_app/Saeed_html_file.html
 ./main > Saeed_html_file.html
 mv Saeed_html_file.html ../web_app/
-open ../web_app/Saeed_html_file.html
+# open ../web_app/Saeed_html_file.html
