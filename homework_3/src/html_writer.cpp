@@ -4,9 +4,8 @@
  * @ Email: arabi@iastate.edu
  **********************************/
 
-#include "html_writer.hpp"
+#include "../api/html_writer.hpp"
 
-#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -40,7 +39,7 @@ void html_writer::CloseRow() { std::cout << "</div>" << std::endl; }
 
 void html_writer::AddColumn(const std::string& imagename,
                             const std::string& imagesrc,
-                            const float& imagescore, const bool& style) {
+                            const float& imagescore, bool& style) {
   if (style) {
     std::cout << "<div class="
               << R"("column")"
