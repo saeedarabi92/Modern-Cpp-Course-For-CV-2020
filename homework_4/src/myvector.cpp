@@ -19,7 +19,7 @@ class Myvector {  // The class
     size = arr_size;
     vec = new T[arr_size];
     for (int i = 0; i < arr_size; i++) {
-      vec[i] = arr[i];
+      *(vec + i) = *(arr + i);  // or vec[i] = arr[i]
     }
   }
   void Print() {
@@ -27,7 +27,7 @@ class Myvector {  // The class
     for (int i = 0; i < size - 1; i++) {
       std::cout << vec[i] << " ";
     }
-    std::cout << vec[size - 1];
+    std::cout << *(vec + size - 1);  // or  vec[size - 1];
     std::cout << "]";
     std::cout << std::endl;
   }
@@ -36,18 +36,18 @@ class Myvector {  // The class
   void push_back(const T element) {
     T* temp = new T[size + 1];
     for (int i = 0; i < size; i++) {
-      temp[i] = vec[i];
+      *(temp + i) = *(vec + i);  // or temp[i] = vec[i]
     }
-    temp[size] = element;
+    *(temp + size) = element;  // or temp[size] = element
     size++;
-    delete[] vec;
+    delete[] vec;  // deallocate the value of the pointer
     vec = temp;
   }
 };
 
 int main() {
   int arr[] = {1, 2, 3};
-  Myvector<int> myvec(arr, 3);
+  Myvector<int> myvec(&arr[0], 3);
   myvec.push_back(34);
   myvec.Print();
   myvec.get_size();
