@@ -15,7 +15,7 @@ class Myvector {  // The class
 
  public:
   Myvector() { vec = NULL; }
-  Myvector(T arr[], int arr_size) {
+  Myvector(const T* arr, const int arr_size) {
     size = arr_size;
     vec = new T[arr_size];
     for (int i = 0; i < arr_size; i++) {
