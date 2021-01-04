@@ -15,7 +15,6 @@ class Myvector {  // The class
 
  public:
   Myvector() { vec = NULL; }
-
   Myvector(T arr[], int arr_size) {
     size = arr_size;
     vec = new T[arr_size];
@@ -32,12 +31,15 @@ class Myvector {  // The class
     std::cout << "]";
     std::cout << std::endl;
   }
+
+  void get_size() { std::cout << size << std::endl; }
 };
 
 int main() {
   int arr[] = {1, 2, 3};
   Myvector<int> myvec(arr, 3);
   myvec.Print();
+  myvec.get_size();
 
   return 0;
 }
