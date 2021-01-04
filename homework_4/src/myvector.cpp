@@ -33,11 +33,22 @@ class Myvector {  // The class
   }
 
   void get_size() { std::cout << size << std::endl; }
+  void push_back(const T element) {
+    T* temp = new T[size + 1];
+    for (int i = 0; i < size; i++) {
+      temp[i] = vec[i];
+    }
+    temp[size] = element;
+    size++;
+    delete[] vec;
+    vec = temp;
+  }
 };
 
 int main() {
   int arr[] = {1, 2, 3};
   Myvector<int> myvec(arr, 3);
+  myvec.push_back(34);
   myvec.Print();
   myvec.get_size();
 
